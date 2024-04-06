@@ -3,7 +3,7 @@ import Logo from "../assets/ATlogo.svg";
 const Footer = () => {
   return (
     <>
-      <footer className="relative z-0 px-10 lg:px-[60px] py-8 bg-ATpurple text-white space-y-10">
+      <footer className="relative z-0 px-5 md:px-10 lg:px-[60px] py-8 bg-ATpurple text-white space-y-10">
         <section className=" space-y-10 lg:grid grid-cols-2 lg:space-y-0 justify-between">
         <div className="">
         <img src={Logo} alt="Logo" className="" />
