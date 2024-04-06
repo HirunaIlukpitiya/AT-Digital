@@ -1,10 +1,8 @@
 const Paragraph = ({ props }) => {
   return (
     <>
-    <h2 className=" text-ATpurple font-semibold">{props.title}</h2> 
-       <p className=" ">
-      {props.text}
-    </p>
+      <h2 className=" text-ATpurple font-semibold">{props.title}</h2>
+      <p className=" ">{props.text}</p>
     </>
   );
 };

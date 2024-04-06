@@ -3,7 +3,6 @@ import QandA from "../components/Q&A";
 import WebDev from "../assets/webDev.svg";
 import DigStrategy from "../assets/digStrategy.svg";
 import Paragraph from "../components/paragraph";
-
 import OrangeButton from "../components/orangeButton";
 
 const Home = () => {
