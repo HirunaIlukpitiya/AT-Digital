@@ -13,7 +13,7 @@ const QandA = ({ Arrayprop, titleprop }) => {
 
   return (
     <>
-      <div className="relative space-y-5 z-50">
+      <div className="relative space-y-5 md:space-y-7 z-50">
         <h2
           className={`text-ATpurple font-semibold text-center px-5 ${
             !titleprop ? "hidden" : null
@@ -21,17 +21,18 @@ const QandA = ({ Arrayprop, titleprop }) => {
         >
           {titleprop}
         </h2>
+        <div className="space-y-5">
         {QAList.map((item, index) => {
           const isOpen = index === openIndex;
           return (
             <div
-              className="bg-ATlightpurple w-auto h-auto space-y-3 px-5 py-5 rounded"
+              className="bg-ATlightpurple w-auto h-auto space-y-5  px-5 py-5 rounded z-50"
               key={index}
             >
-              <div className="flex justify-between space-x-40">
+              <div className="flex justify-between space-x-32  ">
                 <div className={""}>
                   <h4
-                    className={`font-semibold text-${
+                    className={`font-semibold md:text-[22px] text-${
                       isOpen ? "ATpurple" : "Black"
                     }`}
                   >
@@ -46,11 +47,12 @@ const QandA = ({ Arrayprop, titleprop }) => {
               </div>
 
               <div className="">
-                {isOpen && <p className="text-ATsilver">{item.answer}</p>}
+                {isOpen && <p className="text-ATsilver text-[16px] md:text-[18px]">{item.answer}</p>}
               </div>
             </div>
           );
         })}
+        </div>
       </div>
     </>
   );
