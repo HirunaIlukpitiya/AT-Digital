@@ -44,7 +44,7 @@ const Home = () => {
           </div>
         </section>
 
-        <section className="px-5 py-5 md:px-10 md:py-10 space-y-5 lg:px-[150px] xl:px-[250px]">
+        <section className="px-5 py-5 md:px-10 md:py-10 space-y-10 lg:px-[150px] xl:px-[250px]">
           <div className="text-center md:text-left flex-row md:flex md:items-center md:space-x-5 xl:space-x-[108px]">
             <img
               src={WebDev}
