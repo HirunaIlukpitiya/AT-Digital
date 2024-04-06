@@ -27,48 +27,62 @@ const Home = () => {
   ];
   return (
     <>
-      <div className=" z-10">
-        <img src={HomeBG} alt="HomeBG" className="sm:h-[218px] w-screen" />
+      <div className=" z-10 font-Inter text-ATblack">
+        <section className="relative">
+          <img
+            src={HomeBG}
+            alt="HomeBG"
+            className="sm:h-[218px] md:h-[448px] lg:h-[700px] lg:z-10 w-screen"
+          />
 
-        <div className="px-5 py-5 bg-gradient-to-r from-ATlightgreen to-ATskyblue space-y-5 ">
-          <p className=" text-white text-[36px] text-left font-bold capitalize leading-10 font-Inter">
-            We crush your competitors, goals, and sales records - without the
-            B.S.
-          </p>
-          <OrangeButton props={{ text: "get free consultation" }} />
-        </div>
+          <div className="px-5 py-5 md:px-10 lg:bottom-[60px] lg:left-[60px] xl:left-[80px] lg:h-fit md:py-10 lg:z-20 lg:absolute lg:w-[622px] lg:pl-[60px] bg-gradient-to-r from-ATlightgreen to-ATskyblue space-y-5">
+            <p className=" text-white text-[36px] md:text-[48px] text-left font-bold capitalize leading-[50px]">
+              We crush your competitors, goals, and sales records - without the
+              B.S.
+            </p>
+            <OrangeButton props={{ text: "get free consultation" }} />
+          </div>
+        </section>
 
-        <div className=" px-5 py-5 text-center space-y-5">
-          <div className=" flex justify-center">
+        <section className="px-5 py-5 md:px-10 md:py-10 space-y-5 lg:px-[150px] xl:px-[350px]">
+          <div className="text-center md:text-left md:flex md:items-center md:space-x-5 xl:space-x-[108px]">
             <img
               src={WebDev}
               alt="Web & Mobile App Development"
-              className="h-[275px] w-[275px]"
+              className="h-[275px] w-[275px] lg:h-[346px] lg:w-[346px] xl:h-[414px] xl:w-[414px]"
+            />
+            <div className=" space-y-5">
+              <Paragraph
+                props={{
+                  title: "Web & Mobile App Development",
+                  text: "Your web and mobile Apps are pieces of the puzzle to grow your business. We use frameworks which tailor content and engagement methods to respond to different intents shown by your potential customers who interact with your business online.",
+                }}
+              />
+              <OrangeButton props={{ text: "learn more" }} />
+            </div>
+          </div>
+
+          <div className=" text-center md:text-left md:flex md:flex-row-reverse space-y-5 md:items-center ">
+            <img src={DigStrategy} alt="Digital Strategy Consulting"
+            className="h-[275px] w-[275px] lg:h-[346px] lg:w-[346px] xl:h-[414px] xl:w-[414px]" />
+            <div className=" space-y-5 xl:mr-[108px] md:mr-[20px] ">
+              <Paragraph
+                props={{
+                  title: "Digital Strategy Consulting",
+                  text: "Your digital strategy should complement the overall marketing strategy of the company. In online marketing, each component will never work in isolation and every business needs a different mix. We provide a clear concept and strategic overview to find the most efficient model for your business.",
+                }}
+               />
+              <OrangeButton props={{ text: "learn more" }} />
+            </div>
+          </div>
+
+          <div className=" xl:px-[190px]">
+            <QandA
+              Arrayprop={QAlist}
+              titleprop={"Frequently asked questions"}
             />
           </div>
-          <Paragraph
-            props={{
-              title: "Web & Mobile App Development",
-              text: "Your web and mobile Apps are pieces of the puzzle to grow your business. We use frameworks which tailor content and engagement methods to respond to different intents shown by your potential customers who interact with your business online.",
-            }}
-          />
-          <OrangeButton props={{ text: "learn more" }} />
-        </div>
-        <div className=" px-5 py-5 text-center space-y-5 ">
-          <div className=" flex justify-center">
-            <img src={DigStrategy} alt="Digital Strategy Consulting" />
-          </div>
-          <Paragraph
-            props={{
-              title: "Digital Strategy Consulting",
-              text: "Your digital strategy should complement the overall marketing strategy of the company. In online marketing, each component will never work in isolation and every business needs a different mix. We provide a clear concept and strategic overview to find the most efficient model for your business.",
-            }}
-          />
-          <OrangeButton props={{ text: "learn more" }} />
-        </div>
-        <div className="px-5 py-5">
-          <QandA Arrayprop={QAlist} titleprop={"Frequently asked questions"} />
-        </div>
+        </section>
       </div>
     </>
   );

@@ -20,9 +20,12 @@ export default {
         'ATorange' : '#F28D35',
         'ATlightpurple' : '#FAF8FF',
         'ATsilver' : '#6F6C90',
+        'ATblack' : '#2F2F2F',
+        'ATwhite' : '#FFF8E0',
       },
       fontFamily: {
         'Inter' : ['Inter', 'sans-serif'],
+        'poppins' : ['Poppins', 'sans-serif'],
       },
     },
   },

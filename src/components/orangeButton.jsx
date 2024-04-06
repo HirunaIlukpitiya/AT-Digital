@@ -1,6 +1,6 @@
 const OrangeButton = ({ props }) => {
   return (
-    <button className=" bg-ATorange px-5 py-1 text-white uppercase font-semibold rounded">
+    <button className=" bg-ATorange px-7 py-2 text-white uppercase font-semibold rounded">
       {props.text}
     </button>
   );
