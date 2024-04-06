@@ -1,3 +1,5 @@
+
+import React from "react";
 import { Route, Routes, BrowserRouter } from "react-router-dom";
 import "./App.css";
 import NavBar from "./components/navbar";
@@ -14,15 +16,13 @@ function App() {
   return (
    <>
      <NavBar/>
-     <BrowserRouter>
        <Routes>
          <Route path="/" element={<Home />} />
-         <Route path="/about" element={<About />} />
          <Route path="/services" element={<Services />} />
+         <Route path="/about" element={<About />} />
          <Route path="/contact" element={<Contact />} />
          <Route path="/careers" element={<Careers />} />
        </Routes>
-     </BrowserRouter>
      <Footer/>
    </>
   );
