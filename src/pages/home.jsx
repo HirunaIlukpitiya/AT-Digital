@@ -1,6 +1,6 @@
 import HomeBG from "../assets/homeBG.png";
 import QandA from "../components/Q&A";
-import WebDev from "../assets/webDev.svg";
+import WebDev from "../assets/webDev.png";
 import DigStrategy from "../assets/digStrategy.svg";
 import Paragraph from "../components/paragraph";
 import OrangeButton from "../components/orangeButton";
@@ -32,7 +32,7 @@ const Home = () => {
           <img
             src={HomeBG}
             alt="HomeBG"
-            className="sm:h-[218px] md:h-[448px] lg:h-[700px] lg:z-10 w-screen"
+            className="sm:h-[218px] md:h-[448px] lg:h-[700px] lg:z-10 w-screen mx-auto"
           />
 
           <div className="px-5 py-5 md:px-10 lg:bottom-[60px] lg:left-[60px] xl:left-[80px] lg:h-fit md:py-10 lg:z-20 lg:absolute lg:w-[622px] lg:pl-[60px] bg-gradient-to-r from-ATlightgreen to-ATskyblue space-y-5">
@@ -45,11 +45,11 @@ const Home = () => {
         </section>
 
         <section className="px-5 py-5 md:px-10 md:py-10 space-y-5 lg:px-[150px] xl:px-[350px]">
-          <div className="text-center md:text-left md:flex md:items-center md:space-x-5 xl:space-x-[108px]">
+          <div className="text-center md:text-left flex-row md:flex md:items-center md:space-x-5 xl:space-x-[108px]">
             <img
               src={WebDev}
               alt="Web & Mobile App Development"
-              className="h-[275px] w-[275px] lg:h-[346px] lg:w-[346px] xl:h-[414px] xl:w-[414px]"
+              className="h-[275px] w-[275px] lg:h-[346px] lg:w-[346px] xl:h-[414px] xl:w-[414px] mx-auto"
             />
             <div className=" space-y-5">
               <Paragraph
@@ -64,7 +64,7 @@ const Home = () => {
 
           <div className=" text-center md:text-left md:flex md:flex-row-reverse space-y-5 md:items-center ">
             <img src={DigStrategy} alt="Digital Strategy Consulting"
-            className="h-[275px] w-[275px] lg:h-[346px] lg:w-[346px] xl:h-[414px] xl:w-[414px]" />
+            className="h-[275px] w-[275px] lg:h-[346px] lg:w-[346px] xl:h-[414px] xl:w-[414px] mx-auto" />
             <div className=" space-y-5 xl:mr-[108px] md:mr-[20px] ">
               <Paragraph
                 props={{
