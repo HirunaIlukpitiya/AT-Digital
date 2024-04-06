@@ -1,4 +1,6 @@
 import Logo from "../assets/ATlogo.svg";
+import React from "react";
+import { Link } from "react-router-dom";
 import MenuButton from "../assets/menu.svg";
 import CloseIcon from "../assets/close.svg";
 import { useState } from "react";
@@ -36,11 +38,10 @@ const NavBar = () => {
         </div>
         <div className="hidden md:flex">
             <ul className="space-x-5 flex">
-                {menuItems.map((item, index = 1) => {
+                {menuItems.map((item, index) => {
                 return (
                     <li key={index} className=" text-white text-xl uppercase">
-                    {/* <Link to={item.link}>{item.title}</Link> */}
-                    {item.title}
+                     <Link to={item.link}>{item.title}</Link>
                     </li>
                 );
                 })}
@@ -52,12 +53,11 @@ const NavBar = () => {
           <div className="">
             <ul className=" space-y-5 uppercase font-semibold">
 
-                <li>Home</li>
+                <li><Link to={"/"} onClick={handleToggle}>Home</Link></li>
               {menuItems.map((item, index) => {
                 return (
                   <li key={index} >
-                    {/* <Link to={item.link}>{item.title}</Link> */}
-                    {item.title}
+                    <Link to={item.link} onClick={handleToggle}>{item.title}</Link>
                   </li>
                 );
               })}
